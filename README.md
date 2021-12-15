@@ -16,20 +16,28 @@ It's entirely possible that the code in this repo is so sloppy that it's causing
 So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
 
 ## Requirements:
-luma, luma.core oled?
+### Hardware:
+* Raspberry Pi (any model should work - tested successfully on RPi0W (OS: P4wnP1_ALOA) and RPi02W (OS:  RaspberryPi OS)
+* SH1106 OLED Screen (1.3" by Waveshare)
+### Software:
+* Linux (so far tested on P4wnP1 ALOA [Kali] and Raspberry Pi OS [Debian])
+* You need <a href="https://pypi.org/project/luma.core/">luma and luma.oled</a>.
+##### How to Install Luma, Luma.OLED
+<code>sudo pip3 install luma luma.oled</code><br />
 
 ## Install:
-<code>cd ~</code>&nbsp;
-<code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code>&nbsp;
-<code>cd p4wnsolo-joyterm</code>&nbsp;
-<code>sudo python3 go.py</code>&nbsp;
+<code>cd ~</code><br />
+<code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code><br />
+<code>cd p4wnsolo-joyterm</code><br />
+<code>sudo python3 go.py</code><br />
 
 ## Usage:
 1) Use the LEFT and RIGHT buttons on the OLED Joystick to switch characters 
 2) Press the CENTER Joystick button to add the current character to the Command Line
-3) If you made a mistake, press KEY2 (X) for Backspace
+3) If you made a mistake, press KEY2 ("X") for Backspace
 4) To switch KEYBOARD Layout, press KEY1.  For example, the default keyboard layout is "a-z" (lowercase).
-
+5) Launch the command:  press KEY3 (">")
+6) View the command output on the OLED screen
 
 ## Tips:
 - The SPACE character (" ") exists in at least two character sets:  "a-z" and "A-Z" (both uppercase and lowercase alphabet character sets have the SPACE character *after* the "Z" character.
