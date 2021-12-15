@@ -17,7 +17,7 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 
 ## Requirements:
 ### Hardware:
-* Raspberry Pi (any model should work - tested successfully on RPi0W (OS: P4wnP1_ALOA) and RPi02W (OS:  RaspberryPi OS)
+* Raspberry Pi (any model should work - tested successfully on RPi0W [OS: P4wnP1_ALOA] and RPi02W [OS:  RaspberryPi OS]
 * SH1106 OLED Screen (1.3" by Waveshare)
 ### Software:
 * Linux (so far tested on P4wnP1 ALOA [Kali] and Raspberry Pi OS [Debian])
@@ -40,7 +40,7 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 6) View the command output on the OLED screen
 
 ## Tips:
-- The SPACE character (" ") exists in at least two character sets:  "a-z" and "A-Z" (both uppercase and lowercase alphabet character sets have the SPACE character *after* the "Z" character.
+- The SPACE character (" ") exists in at least two character sets:  "a-z" and "A-Z" (both uppercase and lowercase alphabet character sets have the SPACE character *after* the "Z" character or before the "A" character).
 - The character set repeats (or "cycles") when the last character in the set is reached.  So you can just keep scrolling through characters (ex:  If you're on the A character, press Left to go to Z from A, or press Right to go from A to B).
 
 There are four (4) character sets:
