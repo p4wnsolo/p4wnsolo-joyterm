@@ -9,7 +9,7 @@ This is a small collection of a few scripts I put together to enable Terminal fu
 ## Performance Note (Pi0W vs Pi02)
 Everything about this project runs *way* faster and more smoothly on Raspberry Pi Zero 2.
 
-But until nexmon is released for RPi02W, we're stuck with slower performance.  
+But until nexmon is released for RPi02W, we're stuck with slower performance (if you're dead set on using P4wnP1 as your OS - and if so, I don't blame you one bit).  
 
 It's entirely possible that the code in this repo is so sloppy that it's causing the joystick-press performance to suffer on RPiZeroW.  But like I said - it runs perfectly (and FAST) on Raspberry Pi Zero 2 (see <a href="https://twitter.com/p4wnsolo/status/1470547554085474307">Demo video clip on Twitter</a> 0m19s)
 
