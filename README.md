@@ -5,7 +5,10 @@ This is a small collection of a few scripts I put together to enable Terminal fu
 
 ## Performance Note (Pi0W vs Pi02)
 Everything about this project runs *way* faster and more smoothly on Raspberry Pi Zero 2.
-But until nexmon is released for RPi02W, we're stuck with slower performance.  It's entirely possible that the code in this repo is so sloppy that it's causing the joystick-press performance to suffer on RPiZeroW.  But like I said - it runs perfectly (and FAST) on Raspberry Pi Zero 2.
+
+But until nexmon is released for RPi02W, we're stuck with slower performance.  
+
+It's entirely possible that the code in this repo is so sloppy that it's causing the joystick-press performance to suffer on RPiZeroW.  But like I said - it runs perfectly (and FAST) on Raspberry Pi Zero 2 (see <a href="https://twitter.com/p4wnsolo/status/1470547554085474307">Demo video clip on Twitter</a> 0m19s)
 
 So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
 
@@ -13,10 +16,10 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 luma, luma.core oled?
 
 ## Install:
-<code>cd ~</code>
-<code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code>
-<code>cd p4wnsolo-joyterm</code>
-<code>sudo python3 go.py</code>
+<code>cd ~</code>&nbsp;
+<code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code>&nbsp;
+<code>cd p4wnsolo-joyterm</code>&nbsp;
+<code>sudo python3 go.py</code>&nbsp;
 
 ## Usage:
 1) Use the LEFT and RIGHT buttons on the OLED Joystick to switch characters 
@@ -126,7 +129,7 @@ The crontab entry above does the following:
 * Then runs the P4wnP1 OLED Terminal wrapper
 
 ## Aliases to Add
-### Side project idea – PiPod Shuffle:
+#### Side project idea – PiPod Shuffle:
 Use a quick alias to play MP3 files randomly to mimic and iPod shuffle.
 
 ##### Command:
@@ -146,9 +149,15 @@ I can never remember the syntax for this command.  So why not make an alias for 
 
 find /home -name *.jpg
 
-### Modify ping Behavior
+#### Modify ping Behavior
 I don’t know why I’d do this, but I might:
 
+###### Command:
+
+Stop after sending count ECHO_REQUEST packets:
+<code>alias ping=’ping -c 5′</code>
+Do not wait interval 1 second, go fast #
+<code>alias fastping=’ping -c 100 -s.2′</code>
 
 
 ## Wrap-Up:
@@ -162,13 +171,4 @@ The result from changing this code was significant:
 The terminal.py script now shows output from any program – as long as that program is outputting to a text file.
 Since getting programs to output to text in Linux is pretty easy, we can now display pretty much any program’s output on our OLED screen.
  
-
-
-##### Command:
-
-Stop after sending count ECHO_REQUEST packets:
-<code>alias ping=’ping -c 5′</code>
-Do not wait interval 1 second, go fast #
-<code>alias fastping=’ping -c 100 -s.2′</code>
-
 
