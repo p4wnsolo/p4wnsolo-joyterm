@@ -6,6 +6,8 @@
 
 This is a small collection of a few scripts I put together to enable Terminal functionality on Raspberry Pi with OLED screen (especially P4wnP1).
 
+It is assumed that you already got your OLED screen working *before* trying p4wnsolo-joyterm (see <a href="https://github.com/pimoroni/sh1106-python">SH1106 on Github</a>).
+
 ## Performance Note (Pi0W vs Pi02)
 Everything about this project runs *way* faster and more smoothly on Raspberry Pi Zero 2.
 
