@@ -1,5 +1,8 @@
 # p4wnsolo-joyterm
-Get input from OLED Joystick, Runs command, Displays output on OLED Screen (Great for P4wnP1 - even better on Raspberry Pi Zero 2)
+* Gets text input from OLED Joystick
+* Runs the command you typed
+* Displays output on OLED Screen 
+*(Great for P4wnP1 - even better on Raspberry Pi Zero 2)*
 
 This is a small collection of a few scripts I put together to enable Terminal functionality on Raspberry Pi with OLED screen (especially P4wnP1).
 
