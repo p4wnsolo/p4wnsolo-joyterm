@@ -70,6 +70,7 @@ The following list of files are required to run p4wnsolo-joyterm:
 * Runs the command
 Prints the output onto the OLED screen
 
+To make the scripts compatible across Kali & Raspberry Pi, I used <a href="https://stackoverflow.com/questions/4028904/what-is-the-correct-cross-platform-way-to-get-the-home-directory-in-python">this code snippet from StackExchange</a>.
 
 ## 💬 Explanation of Scripts in p4wnsolo-joyterm
 
