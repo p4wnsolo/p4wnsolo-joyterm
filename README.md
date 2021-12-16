@@ -60,6 +60,8 @@ To finish developing the script (make it cross-compatible), I ran it several tim
 
 Testing DONE on Pi Zero W (I ran the scripts on my RPi0W P4wnP1 and changed the code to be cross-platform).
 
+To make the scripts compatible across Kali & Raspberry Pi, I used <a href="https://stackoverflow.com/questions/4028904/what-is-the-correct-cross-platform-way-to-get-the-home-directory-in-python">this code snippet from StackExchange</a>.
+
 ## 📁 Files included:
 The following list of files are required to run p4wnsolo-joyterm:
 ##### go.py – Adapted from a code snippet found somewhere
@@ -69,8 +71,6 @@ The following list of files are required to run p4wnsolo-joyterm:
 ##### p4wnsolo-terminal.py – Adapted from terminal.py in luma.examples
 * Runs the command
 Prints the output onto the OLED screen
-
-To make the scripts compatible across Kali & Raspberry Pi, I used <a href="https://stackoverflow.com/questions/4028904/what-is-the-correct-cross-platform-way-to-get-the-home-directory-in-python">this code snippet from StackExchange</a>.
 
 ## 💬 Explanation of Scripts in p4wnsolo-joyterm
 
