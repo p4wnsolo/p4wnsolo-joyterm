@@ -1,4 +1,4 @@
-# p4wnsolo-joyterm
+# 🕹️ p4wnsolo-joyterm
 * Gets text input from OLED Joystick
 * Runs the command you typed
 * Displays output on OLED Screen 
@@ -11,7 +11,7 @@ This is a small collection of a few scripts I put together to enable Terminal fu
 
 It is assumed that you already got your OLED screen working *before* trying p4wnsolo-joyterm (see <a href="https://github.com/pimoroni/sh1106-python">SH1106 on Github</a>).
 
-## Performance Note (Pi0W vs Pi02)
+## 🐇 Performance Note (Pi0W vs Pi02)
 Everything about this project runs *way* faster and more smoothly on Raspberry Pi Zero 2.
 
 But until nexmon is released for RPi02W, we're stuck with slower performance (if you're dead set on using P4wnP1 as your OS - and if so, I don't blame you one bit).  
@@ -20,7 +20,7 @@ It's entirely possible that the code in this repo is so sloppy that it's causing
 
 So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
 
-## Requirements:
+## 📝 Requirements:
 ### Hardware:
 * Raspberry Pi (any model should work - tested successfully on RPi0W [OS: P4wnP1_ALOA] and RPi02W [OS:  RaspberryPi OS]
 * SH1106 OLED Screen (1.3" by Waveshare)
@@ -30,13 +30,13 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 ##### How to Install Luma, Luma.OLED
 <code>sudo pip3 install luma luma.oled</code><br />
 
-## Install:
+## 🔨 Install:
 <code>cd ~</code><br />
 <code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code><br />
 <code>cd p4wnsolo-joyterm</code><br />
 <code>sudo python3 go.py</code><br />
 
-## Usage:
+## ▶️ Usage:
 1) Use the LEFT and RIGHT buttons on the OLED Joystick to switch characters 
 2) Press the CENTER Joystick button to add the current character to the Command Line
 3) If you made a mistake, press KEY2 ("X") for Backspace
@@ -44,7 +44,7 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 5) Launch the command:  press KEY3 (">")
 6) View the command output on the OLED screen
 
-## Tips:
+## 💡 Tips:
 - The SPACE character (" ") exists in at least two character sets:  "a-z" and "A-Z" (both uppercase and lowercase alphabet character sets have the SPACE character *after* the "Z" character or before the "A" character).
 - The character set repeats (or "cycles") when the last character in the set is reached.  So you can just keep scrolling through characters (ex:  If you're on the A character, press Left to go to Z from A, or press Right to go from A to B).
 
@@ -54,13 +54,14 @@ There are four (4) character sets:
 - special characters
 - A-Z (uppercase)
 
-## Compatibility & Platforms
+## 💻 Compatibility & Platforms
 For developing the script, I actually used a RaspberryPi Zero 2.  
 To finish developing the script (make it cross-compatible), I ran it several times on Raspberry Pi Zero W running P4wnP1 ALOA latest.
 
 Testing DONE on Pi Zero W (I ran the scripts on my RPi0W P4wnP1 and changed the code to be cross-platform).
 
-## Files included:
+## 📁 Files included:
+The following list of files are required to run p4wnsolo-joyterm:
 ##### go.py – Adapted from a code snippet found somewhere
 * Launches the scripts that do the actual work:
 ##### p4wnsolo-joytext.py – Adapted from key_demo.py in SH1106 demo files (but by now it’s its own beast, pretty much)
@@ -69,11 +70,12 @@ Testing DONE on Pi Zero W (I ran the scripts on my RPi0W P4wnP1 and changed the 
 * Runs the command
 Prints the output onto the OLED screen
 
-## Explanation of Scripts in p4wnsolo-joyterm
+
+## 💬 Explanation of Scripts in p4wnsolo-joyterm
 
 ### What is <code>go.py</code>?
-* Launches the “wifi-pw-skiptest.py” script to get text input from joystick and buttons on OLED screen
-* Then runs the “terminal.py” script to execute the text input (command)
+* Launches the “p4wnsolo-joytext.py” script to get text input from joystick and buttons on OLED screen
+* Then runs the “p4wnsolo-terminal.py” script to execute the text input (command)
 
 ### What is <code>p4wnsolo-joytext.py</code>?
 
@@ -91,8 +93,12 @@ KEY1 (font-awesome keyboard icon) switches keyboard layouts:
 The SPACE character is currently located in this character set
 [3] Finally, we have lowercase alphabet (a-z)
 KEY2 (“X”) is the backspace key.
-
 KEY3 (“>”) is the GO button.
+
+##### After you press the GO button:
+The joyterm script writes the text you entered into a text file called thecommand.txt.
+Last but not least, joyterm shows text to indicate that it's actually running the Command you entered ("Running.. Started").
+
 
 ### What is <code>p4wnsolo-terminal.py</code>?
 The terminal.py script is an adaptation of the terminal.py script found in luma.examples repo.
@@ -102,7 +108,7 @@ So I simply replaced that part of the code to display lines of text from a TEXT 
 Now that we got the (excellent) terminal.py (from luma.examples) script to display dynamic content, we’re ready to take the command input from the user and send it to terminal.py.
 
 
-## Entering text using joystick on OLED screen
+## 🤖 Entering Commands & text using joystick on OLED screen
 Just enter any command you normally would on the Linux command line.
 Here are some nice, short, sweet commands if you're out of ideas:
 * ls
@@ -113,7 +119,7 @@ Here are some nice, short, sweet commands if you're out of ideas:
 Or be bold, install Wifite, and try "sudo wifite".
 
 
-## The Docket
+## ✅ The Docket
 ### To Do
 Eventually I'll add these features:
 * Run previous command(s) (like pressing the "Up" arrow key in Linux CLI)
@@ -128,14 +134,7 @@ The purpose of this is to enable the user to input more text when a program paus
 Add space character (” “) between A and Z in A-Z uppercase AND lowercase charsets
 Add space character to 0-9 charset
 
-
-## Local file locations:
-The following list of files are required to run P4wn-Term.
-go.py
-p4wnsolo-joytext.py
-p4wnsolo-terminal.py 
-
-## Run on Boot
+## 👢 Run on Boot
 To run this script on boot, just follow the steps below to add p4wnsolo-joyterm to Crontab as a new entry.
 #### How to Add p4wnsolo-joyterm to Crontab
 * Enter "crontab -e" on command line
@@ -152,7 +151,7 @@ The crontab entry above does the following:
 * Changes folders into the main working folder using crontab
 * Then runs the P4wnP1 OLED Terminal wrapper
 
-## Aliases to Add
+## 🎁 Aliases to Add
 #### Side project idea – PiPod Shuffle:
 Use a quick alias to play MP3 files randomly to mimic and iPod shuffle.
 
@@ -184,7 +183,7 @@ Do not wait interval 1 second, go fast #
 <code>alias fastping=’ping -c 100 -s.2′</code>
 
 
-## Wrap-Up:
+## ⚰️ Wrap-Up:
 To make this script, I basically just modified the terminal.py file from <a href="https://github.com/rm-hull/luma.examples">Luma.examples</a>
 1.  Take terminal.py from luma.examples
 2.  Find the loop that displays “Line 1, Line 2, Line 3”
