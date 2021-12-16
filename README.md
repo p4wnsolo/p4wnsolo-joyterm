@@ -195,3 +195,6 @@ The terminal.py script now shows output from any program – as long as that pro
 Since getting programs to output to text in Linux is pretty easy, we can now display pretty much any program’s output on our OLED screen.
  
 
+## Contact
+<a href="https://twitter.com/p4wnsolo">@p4wnsolo</a> on Twitter
+<a href="https://github.com/p4wnsolo">@p4wnsolo</a> on GitHub
