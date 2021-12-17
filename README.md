@@ -39,9 +39,10 @@ Stay tuned for this update, which should be coming soon.
 * SPI must be enabled (I use Method 3 in <a href="https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/">this RaspberryPi-spy article</a>)
 
 ##### How to Install numpy, Luma, Luma.OLED
+Tip #1:  Luma.OLED takes ~10 mins to install on RPi 0 W, while numpy takes ~20 mins.
 <code>sudo pip3 install luma luma.oled numpy -y</code>
 <br />
-If you see a "Pillow" / "jpeg" error while installing Luma, don't worry.  The p4wnsolo-joyterm script runs fine even with the error.  If you'd like, you can <a href="https://pypi.org/project/Pillow/">manually install Pillow</a> to make sure that part's good.
+Tip #2:  If you see a "Pillow" / "jpeg" error while installing Luma, don't worry.  The p4wnsolo-joyterm script runs fine even with the error.  If you'd like, you can <a href="https://pypi.org/project/Pillow/">manually install Pillow</a> to make sure that part's good.
 
 ## 🔨 Install p4wnsolo-joyterm:
 <code>cd ~</code>
