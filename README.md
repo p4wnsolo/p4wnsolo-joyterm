@@ -21,7 +21,7 @@ It's entirely possible that the code in this repo is so sloppy that it's causing
 
 So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
 
-#### Functionality
+#### ⚙️ Functionality
 Currently, p4wnsolo-joyterm just runs a "one shot".
 It runs a command and displays the output - but does not wait for more output (yet).
 For example, Wifite runs just fine - but p4wnsolo-joyterm Exits when Wifite asks for input.
