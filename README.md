@@ -34,9 +34,13 @@ Stay tuned for this update, which should be coming soon.
 * SH1106 OLED Screen (1.3" by Waveshare)
 ### Software:
 * Linux (so far tested on P4wnP1 ALOA [Kali] and Raspberry Pi OS [Debian])
-* You need <a href="https://pypi.org/project/luma.core/">luma and luma.oled</a>.
-##### How to Install Luma, Luma.OLED
-<c ode>sudo pip3 install luma luma.oled</code><br />
+* <a href="https://pypi.org/project/luma.core/">luma and luma.oled</a>
+* <a href="https://numpy.org/install/">numpy</a>
+* SPI must be enabled (I use Method 3 in <a href="https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/">this RaspberryPi-spy article</a>)
+
+##### How to Install numpy, Luma, Luma.OLED
+<code>sudo pip3 install luma luma.oled numpy -y</code>
+<br />
 
 ## 🔨 Install:
 <code>cd ~</code><br />
