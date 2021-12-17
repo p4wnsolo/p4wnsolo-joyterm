@@ -40,6 +40,7 @@ Stay tuned for this update, which should be coming soon.
 
 ##### How to Install numpy, Luma, Luma.OLED
 Tip #1:  Luma.OLED takes ~10 mins to install on RPi 0 W, while numpy takes ~20 mins.
+<br />
 <code>sudo pip3 install luma luma.oled numpy -y</code>
 <br />
 Tip #2:  If you see a "Pillow" / "jpeg" error while installing Luma, don't worry.  The p4wnsolo-joyterm script runs fine even with the error.  If you'd like, you can <a href="https://pypi.org/project/Pillow/">manually install Pillow</a> to make sure that part's good.
