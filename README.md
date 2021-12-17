@@ -43,7 +43,7 @@ Stay tuned for this update, which should be coming soon.
 <br />
 If you see a "Pillow" / "jpeg" error while installing Luma, don't worry.  The p4wnsolo-joyterm script runs fine even with the error.  If you'd like, you can <a href="https://pypi.org/project/Pillow/">manually install Pillow</a> to make sure that part's good.
 
-## 🔨 Install:
+## 🔨 Install p4wnsolo-joyterm:
 <code>cd ~</code>
 <br />
 <code>git clone https://github.com/p4wnsolo/p4wnsolo-joyterm.git</code>
