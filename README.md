@@ -11,7 +11,8 @@ This is a small collection of a few scripts I put together to enable Terminal fu
 
 It is assumed that you already got your OLED screen working *before* trying p4wnsolo-joyterm (see <a href="https://github.com/pimoroni/sh1106-python">SH1106 on Github</a>).
 
-## 🐇 Performance Note (Pi0W vs Pi02)
+## 💡 Notes 
+#### 🐇 Performance (Pi0W vs Pi02)
 Everything about this project runs *way* faster and more smoothly on Raspberry Pi Zero 2.
 
 But until nexmon is released for RPi02W, we're stuck with slower performance (if you're dead set on using P4wnP1 as your OS - and if so, I don't blame you one bit).  
@@ -19,6 +20,13 @@ But until nexmon is released for RPi02W, we're stuck with slower performance (if
 It's entirely possible that the code in this repo is so sloppy that it's causing the joystick-press performance to suffer on RPiZeroW.  But like I said - it runs perfectly (and FAST) on Raspberry Pi Zero 2 (see <a href="https://twitter.com/p4wnsolo/status/1470547554085474307">Demo video clip on Twitter</a> 0m19s)
 
 So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
+
+#### Functionality
+Currently, p4wnsolo-joyterm just runs a "one shot".
+It runs a command and displays the output - but does not wait for more output (yet).
+For example, Wifite runs just fine - but p4wnsolo-joyterm Exits when Wifite asks for input.
+I'm working on making the Terminal persist while the program continues running, so you can continue adding input after the program starts.
+Stay tuned for this update, which should be coming soon.
 
 ## 📝 Requirements:
 ### Hardware:
@@ -28,7 +36,7 @@ So for now, here's a Demo / pre-release to get you entering commands using that 
 * Linux (so far tested on P4wnP1 ALOA [Kali] and Raspberry Pi OS [Debian])
 * You need <a href="https://pypi.org/project/luma.core/">luma and luma.oled</a>.
 ##### How to Install Luma, Luma.OLED
-<code>sudo pip3 install luma luma.oled</code><br />
+<c ode>sudo pip3 install luma luma.oled</code><br />
 
 ## 🔨 Install:
 <code>cd ~</code><br />
