@@ -39,6 +39,11 @@ Stay tuned for this update, which should be coming soon.
 * <a href="https://numpy.org/install/">numpy</a>
 * SPI must be enabled (I use Method 3 in <a href="https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/">this RaspberryPi-spy article</a>)
 
+Install Method 1:  From BeBoxGui Image
+1.  Flash the BeBoXGui OLED Menu V2 image onto your SD card
+2.  Boot it up and install the following:
+
+
 ##### How to Install numpy, Luma, Luma.OLED
 Tip #1:  Luma.OLED takes ~10 mins to install on RPi 0 W, while numpy takes ~20 mins.
 <br />
