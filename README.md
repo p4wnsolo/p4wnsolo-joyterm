@@ -149,8 +149,11 @@ Here are some nice, short, sweet commands if you're out of ideas:
 * top
 * hostname
 * wget FileUrlGoesHere
-
-
+* torghost -h
+ ** (TorProxy - Must install torghost first)
+* transmission-cli https://UrlHere.torrent -w ~/Downloads
+ ** (Download a torrent - must install transmission-cli first)
+ ** (Command display length limit currently won't allow this)
 Or be bold, install Wifite, and try "sudo wifite".
 
 
