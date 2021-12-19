@@ -141,6 +141,15 @@ Here are some nice, short, sweet commands if you're out of ideas:
 * iwconfig
 * who
 * whoami
+* pwd
+* df
+* jobs
+* history
+* uname
+* top
+* hostname
+* wget FileUrlGoesHere
+
 
 Or be bold, install Wifite, and try "sudo wifite".
 
