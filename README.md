@@ -8,11 +8,12 @@
 
 *(Great for P4wnP1 - even better on Raspberry Pi Zero 2)*
 
-Input
+
+## Input
 
 ![Input](/images/p4wnsolo-joyterm-joytext.jpg "Joytext.py - Joyterm input")
 
-Output
+## Output
 
 ![Output](/images/p4wnsolo-joyterm-output.jpg "Terminal.py - Joyterm output")
 
@@ -60,9 +61,7 @@ Stay tuned for this update, which should be coming soon.
 
 * Linux
     * So far, tested on P4wnP1 ALOA (Kali) and Raspberry Pi OS (Debian)
-
-* spidev `pip3 install RPi.GPIO spidev numpy pillow fontawesome luma luma.oled`
-
+* spidev and other dependences (see command below)
 * [luma and luma.oled](https://pypi.org/project/luma.core/)
 * [numpy](https://numpy.org/install/)
 * SPI must be enabled
@@ -72,8 +71,9 @@ Stay tuned for this update, which should be coming soon.
 
 1.  Flash the BeBoXGui OLED Menu V2 image onto your SD card
 
-2.  Boot it up and install the following:
+2.  Boot it up and run the following command to install dependencies:
 
+`pip3 install RPi.GPIO spidev numpy pillow fontawesome luma luma.oled`
 
 ##### How to Install numpy, Luma, Luma.OLED
 
