@@ -10,11 +10,11 @@
 
 Input
 
-[Input](/images/p4wnsolo-joyterm-joytext.jpg "Joytext.py - Joyterm input")
+![Input](/images/p4wnsolo-joyterm-joytext.jpg "Joytext.py - Joyterm input")
 
 Output
 
-[Output](/images/p4wnsolo-joyterm-output.jpg "Terminal.py - Joyterm output")
+![Output](/images/p4wnsolo-joyterm-output.jpg "Terminal.py - Joyterm output")
 
 This is a small collection of a few scripts I put together to enable Terminal functionality on Raspberry Pi with OLED screen (especially P4wnP1).
 
