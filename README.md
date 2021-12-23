@@ -32,9 +32,9 @@ Nexmon hasn't been released for RPi02W, but you can still use joyterm on P4wnP1 
 
 It's entirely possible that the code I wrote for this repo is so sloppy that it's causing the joystick-press performance to suffer on RPiZeroW.  I say this because [BeBoXGui](https://github.com/beboxos/P4wnP1_ALOA_OLED_MENU_V2) seems to scroll much faster than joytext.py, but joytext.py also has more "going on" in the back end I believe.
 
-But like I said - it runs perfectly (and FAST) on Raspberry Pi Zero 2 (see [Demo video clip on Twitter](https://twitter.com/p4wnsolo/status/1470547554085474307) 0m19s)
+But nevertheless - `joyterm` runs perfectly (and FAST) on Raspberry Pi Zero 2 (see [Demo video clip on Twitter](https://twitter.com/p4wnsolo/status/1470547554085474307) 0m19s)
 
-So for now, here's a Demo / pre-release to get you entering commands using that little Joystick on your P4wnP1.
+So for now, here's a Demo / pre-release of joyterm to get you entering commands using that little Joystick on your P4wnP1.
 
 #### ⚙️ Functionality
 
@@ -227,14 +227,13 @@ Here are some nice, short, sweet commands if you're out of ideas:
 * wget FileUrlGoesHere
 
 * torghost -h
-
-** (TorProxy - Must install torghost first)
+  * (TorProxy - Must install [torghost](https://github.com/SusmithKrishnan/torghost) first)
 
 * transmission-cli https://UrlHere.torrent -w ~/Downloads
   * (Download a torrent - must install transmission-cli first)
   * (Command display length limit currently won't allow this)
 
-Or be bold, install Wifite, and try "sudo wifite".
+Or be bold, [install Wifite](https://blog.eldernode.com/install-and-run-wifite-on-kali-linux/), and try `sudo wifite`.
 
 
 ## ✅ The Docket
@@ -245,27 +244,19 @@ Eventually I'll add these features:
 
 * Run previous command(s) (like pressing the "Up" arrow key in Linux CLI)
 
-* Make some aliases to speed up entry of common commands
+* Add a few useful Linux [aliases](https://www.tecmint.com/create-alias-in-linux/) to speed up entry of common commands
 
 * Move command-entry area to very bottom of screen
 
-* (Priority #1) Have the script continue to read lines of text even after the last line was read (until the “X” key is pressed)
+* (**Priority #1**) Have the script continue to read lines of text even after the last line was read (until the “X” key is pressed)
 
-* (Priority #2) Have the command-entry area re-appear after no new lines in text file have been read for 2 or 3 seconds
+* (**Priority #2**) Have the command-entry area re-appear after no new lines in text file have been read for 2 or 3 seconds
 
 The purpose of this is to enable the user to input more text when a program pauses and asks for user input (such as Wifite and many other hacking programs for Linux)
 
-* Optional cool add-on:  Show a countdown / progress bar/line that fills from top of screen to bottom, to meet the command-entry area when it appears after X seconds of no more text output
+* Optional  add-on:  Show a countdown / progress bar/line that fills from top of screen to bottom, to meet the command-entry area when it appears after X seconds of no more text output
 
-* Add a few useful aliases
-
-### Done 
-
-Add space character (” “) between A and Z in A-Z uppercase AND lowercase charsets
-
-Add space character to 0-9 charset
-
-## 👢 Run on Boot
+## 👢 How to Run `joyterm` on Boot
 
 To run this script on boot, just follow the steps below to add p4wnsolo-joyterm to Crontab as a new entry.
 
@@ -339,6 +330,15 @@ To make this script, I basically just modified the terminal.py file from <a href
 3.  Replace it with a loop to read lines from a text file
 
 The result from changing this code was significant:
+
+
+
+## To Do
+### Done 
+
+Add space character (” “) between A and Z in A-Z uppercase AND lowercase charsets
+
+Add space character to 0-9 charset
 
 The terminal.py script now shows output from any program – as long as that program is outputting to a text file.
 
