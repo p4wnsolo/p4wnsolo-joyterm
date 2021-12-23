@@ -8,6 +8,7 @@
 
 *(Great for P4wnP1 - even better on Raspberry Pi Zero 2)*
 
+UPDATE Dec 23, '21:  Fixed "wrong file path" Issue in go.py
 
 ## Input
 
