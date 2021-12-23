@@ -254,6 +254,10 @@ with open(command_textfile, 'r') as sf:
                 # Get length of input string
                 stringlength = len(thestring)
 
+                # Check if thestring is too long for the screen  ### NEWCODE ###
+                #if stringlength > 11:
+                #    oled_line_4 = 'Reached'
+
                 # Set letter-selection-box x1 and x2 coordinates
                 selection_x1 = ((stringlength * 7) + 1)
                 selection_x2 = ((stringlength * 7) + 12)
@@ -419,7 +423,20 @@ with open(command_textfile, 'r') as sf:
 
                 draw.rectangle((0, 0,127,63), outline=0, fill=1) # Rectangle around entire area
 
+                # Check if thestring is too long for the screen / display
+                if stringlength > 11:  ### NEWCODE ###
+                    selection_x1 = 85 
+                    selection_y1 = 28
+                    selection_x2 = 95
+                    selection_y2 = 42
+
+
                 # Draw the selection Box
+                if stringlength > 11:  ### NEWCODE ###
+                    selection_x1 = 85 
+                    selection_y1 = 28
+                    selection_x2 = 95
+                    selection_y2 = 42
                 draw.rectangle((selection_x1, selection_y1,selection_x2,selection_y2), outline=0, fill=1) #center filled
                 
                 # Print the current selection to the console
@@ -432,8 +449,23 @@ with open(command_textfile, 'r') as sf:
                 print("Selection x2 coordinate: " + str(selection_x2))
                 print("Selection y1 coordinate: " + str(selection_y1))
                 print("Selection y2 coordinate: " + str(selection_y2))
+
+                # Check if thestring is too long for the display ### NEWCODE ###
+                if stringlength > 11:
+                    characters = -13
+                    #string = "This is a string"
+                    oled_line_3 = (oled_line_3[characters:])
+
                 # Draw the text!
                 oled_line_3 = thestring + ltr
+
+                # Check if thestring is too long for the display ### NEWCODE ###
+                if stringlength > 11:
+                    characters = -13
+                    #string = "This is a string"
+                    oled_line_3 = (oled_line_3[characters:])
+                    #output: 'This'
+
                 draw.text((2, 1), oled_line_1, font = font12, fill = 0)
                 draw.text((2, 15), oled_line_2, font = font12, fill = 0)
                 draw.text((2, 29), oled_line_3, font = font12, fill = 0)
