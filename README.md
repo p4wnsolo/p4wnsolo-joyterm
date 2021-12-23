@@ -351,3 +351,8 @@ Since getting programs to output to text in Linux is pretty easy, we can now dis
 ## Contact
 [@p4wnsolo](https://twitter.com/p4wnsolo) on Twitter
 [@p4wnsolo](https://github.com/p4wnsolo) on GitHub
+
+## Thanks
+V0rT3x
+MaMe82
+Stephane BeBoX
