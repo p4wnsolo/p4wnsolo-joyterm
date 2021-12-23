@@ -17,7 +17,8 @@
 
 ![Output](/images/p4wnsolo-joyterm-output.jpg "Terminal.py - Joyterm output")
 
-This is a small collection of a few scripts I put together to enable Terminal functionality on Raspberry Pi with OLED screen (especially P4wnP1).
+## What is `p4wnsolo-joyterm`?
+P4wnSolo-joyterm (aka joyterm) is just a few scripts I put together to enable *Terminal* functionality on Raspberry Pi with OLED screen (especially P4wnP1).
 
 It is assumed that you already got your OLED screen working *before* trying p4wnsolo-joyterm (see [SH1106 on Github](https://github.com/pimoroni/sh1106-python)).
 
@@ -41,9 +42,9 @@ Currently, p4wnsolo-joyterm just runs a "one shot".
 
 It runs a command and displays the output - but does not wait for more output (yet).
 
-For example, Wifite runs just fine - but p4wnsolo-joyterm Exits when Wifite asks for input.
+For example, [Wifite](https://github.com/derv82/wifite2) runs just fine - but p4wnsolo-joyterm Exits when Wifite asks for input.
 
-I'm working on making the Terminal persist while the program continues running, so you can continue adding input after the program starts.
+I'm working on making the Terminal *persist* while the program continues running, so you can continue adding input after the program starts.
 
 Stay tuned for this update, which should be coming soon.
 
@@ -53,7 +54,7 @@ Stay tuned for this update, which should be coming soon.
 
 * Raspberry Pi
     * Any model of Pi should work
-    * Tested successfully on RPi0W (OS: P4wnP1_ALOA) and RPi02W (OS:  RaspberryPi OS)
+    * Tested successfully on RPi0W (OS: [P4wnP1_ALOA](https://github.com/RoganDawes/P4wnP1_aloa)) and RPi02W (OS:  RaspberryPi OS)
 
 * SH1106 OLED Screen (1.3" by Waveshare)
 
